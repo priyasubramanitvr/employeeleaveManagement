@@ -1,0 +1,31 @@
+<div class = "container">
+   
+    <div class = "row">
+    
+      <div class = "col-sm-2" style="background-color: plum">EmployeeName</div> 
+      <div class = "col-sm-2" style="background-color: powderblue">Department</div>
+      <div class = "col-sm-2" style="background-color: pink">LeaveFromDate</div>&nbsp;
+      <div class = "col-sm-2" style="background-color: plum">LeaveToDate</div>&nbsp;
+      
+      <div class = "col-sm-2" style="background-color: powderblue">Reason</div>&nbsp;
+     
+    </div>
+    <div class="row" *ngFor = "let leave of leaves" style="background-color: white">
+      <a class ="action-btn">
+        <i class ="material-icons" (click)="editEmp(leave)">edit</i>
+        
+        
+      </a>
+     
+      <div class = "col-sm-2">{{leave.employeeName}}</div>
+      <div class = "col-sm-2">{{leave.department}}</div>
+      <div class = "col-sm-2">{{leave.leaveFromDate}}</div>
+      <div class = "col-sm-2">{{leave.leaveToDate}}</div>
+      <div class = "col-sm-2">{{leave.reasonForLeave}}</div>
+     
+      
+      
+      
+    </div>
+   
+  </div>

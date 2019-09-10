@@ -1,0 +1,9 @@
+  .form-group{
+     margin-top: 40px;
+     margin-right: 50%;
+    }
+    .mask{ 
+      margin-left: 10px;
+      -webkit-text-security: disc !important;
+     }
+  

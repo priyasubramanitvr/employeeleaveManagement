@@ -1,0 +1,80 @@
+<mat-card>
+  <table> <tr> <mat-label style="font-size:40px; margin-bottom: 20px"><b>REGISTER</b></mat-label></tr>
+    </table>
+
+   <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+      <div class="row">
+          <div class="col-xs-10">
+ 
+              <div class ="form-group">
+                  <label for="firstName">First Name</label>
+      <input type="text" formControlName="firstName" class="form-control" >
+   </div>
+   </div>
+   </div>
+
+
+   <div class="row">
+      <div class="col-xs-10">
+
+          <div class ="form-group">
+              <label for="lastName">Last Name</label>
+  <input type="text" formControlName="lastName" class="form-control" >
+</div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-xs-10">
+
+        <div class ="form-group">
+            <label for="phoneNumber">phoneNumber</label>
+<input type="text" formControlName="phoneNumber" class="form-control" >
+</div>
+</div>
+</div>
+    
+<div class="row">
+<div class="col-xs-10">
+
+    <div class ="form-group">
+        <label for="email">Email</label>
+<input type="text" formControlName="email" class="form-control" >
+</div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-xs-10">
+
+        <div class ="form-group">
+            <label for="password">password</label>
+<input type="text" formControlName="password" class="form-control" 
+[type]="hide ? 'password':'text'" />
+<mat-icon matSuffix (click)="hide = !hide">
+  {{hide ? 'visibility' : 'visibility_off'}}
+</mat-icon>
+</div>
+</div>
+</div>
+    
+
+<div class="row">
+    <div class="col-xs-10">
+  <div class = "form-group">
+   
+      <button type="submit" class="btn btn-primary">Signup</button> 
+      <p>
+        <span class=" "><b>Have an account?</b>  &nbsp;
+    
+          <button type="submit" class="btn btn-primary" routerLink="/login">Login</button>
+        </span></p>
+        </div>
+        </div>
+</div>
+
+
+
+  </form>
+</mat-card>
+
